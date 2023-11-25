@@ -1,0 +1,15 @@
+
+.skillData {
+    margin-top: 6rem;
+    margin-inline: 2.5rem;
+    .skillDataInfo{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 30rem;
+    .textSkill{
+      font-size: 1.1rem;
+      margin-left: 3rem;
+    }
+  }
+}

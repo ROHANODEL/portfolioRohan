@@ -1,0 +1,18 @@
+.contactData {
+  margin-top: 9rem;
+  margin-inline: 4rem;
+  .contactField {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    margin-top: 1rem;
+    .nameLabel {
+      margin-top: 0.8rem;
+    }
+  }
+  .buttonSubmit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
