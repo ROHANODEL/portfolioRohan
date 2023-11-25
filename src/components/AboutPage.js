@@ -25,7 +25,7 @@ const AboutPage = () => {
       <div className="aboutDetails">
         <div className="aboutDetailsData">
           I have experience as a Software Developer. Till now i had worked on 4
-          Projects that are -
+          Projects that are
         </div>
         <div className="aboutDetailsData">1- School Application Using React JS -( Freelancing project ).</div>
         <div className="aboutDetailsData">2- Finance Web Application Using React JS.</div>
