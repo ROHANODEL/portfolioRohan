@@ -15,6 +15,7 @@ import EducationPage from "./EducationPage";
 import ContactPage from "./ContactPage";
 import ExperiencePage from "./ExperiencePage";
 import profile from "../image/rohanImg.jpg";
+import ResumePage from "./ResumePage";
 
 const PortfolioPage = () => {
   const [menuColor, setMenuColor] = useState(1);
@@ -41,6 +42,11 @@ const PortfolioPage = () => {
       id: 4,
       name: "Education",
       content: "Education",
+    },
+    {
+      id: 6,
+      name: "Resume",
+      content: "Resume"
     },
     {
       id: 5,
@@ -133,12 +139,13 @@ const PortfolioPage = () => {
               </div>
             ))}
           </div>
-          <div>
+          <div style={{height: '100%'}}>
             {
               title === "About Me" ? <AboutPage/>
               : title === "Experience" ? <ExperiencePage/>
               : title === "My Skills" ? <SkillPage/>
               : title === "Education" ? <EducationPage/>
+              :  title === "Resume" ? <ResumePage/>
               : <ContactPage/>
             }
             {/* <Routes>
