@@ -16,3 +16,18 @@
     margin-top: 1.5rem;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .contactData {
+    margin-top: 9rem;
+    margin-inline: 1rem;
+    .contactField {
+      grid-template-columns: 30% 60%;
+      .nameLabel {
+      }
+    }
+    .buttonSubmit{
+margin-bottom: 1rem;
+    }
+  }
+}

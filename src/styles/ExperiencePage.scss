@@ -57,17 +57,58 @@
     }
   }
 
-  .courseDetails{
+  .courseDetails {
     margin-left: 5.5rem;
-  .courseTitle {
-    color: #44e4af;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 2rem;
-  }
-  .courseData{
-    margin-top: 0.5rem;
+    .courseTitle {
+      color: #44e4af;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-top: 2rem;
+    }
+    .courseData {
+      margin-top: 0.5rem;
+    }
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .experienceData {
+    margin-inline: 0;
+    margin-top: 8.5rem;
+    .container {
+      width: 100%;
+      .step {
+      }
+      .v-stepper {
+      }
+      .step .circle {
+      }
+      .step .line {
+      }
+      .step.completed .circle {
+      }
+      .step.completed .line {
+      }
+      .step.active .circle {
+      }
+      .step.empty .circle {
+      }
+      .step.empty .line {
+      }
+      .step:last-child .line {
+      }
+      .content {
+      }
+    }
+
+    .courseDetails {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      .courseTitle {
+        margin-top: 1rem;
+      }
+      .courseData {
+      }
+    }
+  }
 }

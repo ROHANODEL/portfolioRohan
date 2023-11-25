@@ -50,3 +50,27 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .aboutData {
+    .aboutDetails {
+      margin-top: 9rem;
+    }
+    .doing {
+    }
+    .cardContainer {
+      .card {
+        margin: 0.2rem;
+        margin-inline: 0.5rem;
+        .cardImage {
+          .cardIcon {
+          }
+        }
+        .cardDataInfo {
+          &_name {
+          }
+        }
+      }
+    }
+  }
+}

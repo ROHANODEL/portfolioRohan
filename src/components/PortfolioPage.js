@@ -14,6 +14,7 @@ import EducationPage from "./EducationPage";
 // import { useNavigate } from "react-router-dom";
 import ContactPage from "./ContactPage";
 import ExperiencePage from "./ExperiencePage";
+import profile from "../image/rohanImg.jpg";
 
 const PortfolioPage = () => {
   const [menuColor, setMenuColor] = useState(1);
@@ -67,7 +68,9 @@ const PortfolioPage = () => {
     <div className="mainClass">
       <div className="innerClass">
         <div className="leftMenu">
-          <div className="imageBox">Image</div>
+          <div className="imageBox">
+            <img src={profile} style={{height:'9rem', width:'10rem'}}/>
+          </div>
           <div className="leftName">Rohan odel</div>
           <div className="jobPosition">Software Developer</div>
           <hr style={{ width: "12rem" }}></hr>

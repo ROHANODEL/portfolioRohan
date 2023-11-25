@@ -31,6 +31,7 @@
         width: 10rem;
         // border: 1px solid hsl(0, 0%, 22%);
         border-radius: 20px;
+        overflow: hidden;
       }
       .leftName {
         font-weight: 500;
@@ -113,47 +114,55 @@
           cursor: pointer;
         }
       }
-      .aboutDetails {
-        margin-top: 6rem;
-        margin-inline: 2.5rem;
-      }
-      .doing {
-        margin-inline: 2.5rem;
-        margin-top: 2rem;
-        color: #44e4af;
-        font-size: 1.3rem;
-        font-weight: 500;
-      }
-      .cardContainer {
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainClass {
+    height: 100%;
+
+    .innerClass {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      .leftMenu {
+        width: 80%;
         margin-top: 1rem;
-        display: flex;
-        flex-direction: row;
-        height: 20rem;
-        width: 100%;
-        flex-wrap: wrap;
-        .card {
-          border: 1px solid hsl(0, 0%, 22%);
-          background-color: hsl(240, 1%, 17%);
-          border-radius: 10px;
-          display: grid;
-          grid-template-columns: 30% 65%;
-          gap: 1rem;
-          margin-left: 2.5rem;
-          width: 25rem;
-          height: 8rem;
-          .cardImage {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        height: 32rem;
+        .imageBox {
+          margin-top: 1rem;
+        }
+        .leftName {
+        }
+        .jobPosition {
+        }
+        .basicData {
+          .leftIcon {
           }
-          .cardDataInfo {
-            display: grid;
-            grid-template-rows: 35% 65%;
-            &_name {
-              font-weight: 500;
-              font-size: 1.2rem;
-              margin-top: 0.5rem;
-            }
+          .basicInfo {
+          }
+        }
+        .leftBottomIcon {
+          margin-bottom: 1rem;
+          .bottomIcon {
+          }
+        }
+      }
+      .rightMenu {
+        width: 80%;
+        height: auto;
+        .rightMenuTitle {
+          margin: 0;
+          margin-top: 6rem;
+          margin-left: 1rem;
+        }
+        .rightMenuData {
+          width: 100%;
+          flex-wrap: wrap;
+          height: 6rem;
+          border-radius: 20px;
+          .menuList {
           }
         }
       }

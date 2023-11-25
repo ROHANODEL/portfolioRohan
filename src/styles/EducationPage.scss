@@ -55,5 +55,45 @@
       display: inline-block;
     }
   }
+}
 
+
+
+@media only screen and (max-width: 1000px) {
+  .educationData {
+    margin-top: 9rem;
+    .container {
+      width: 100%;
+      .step {
+  
+      }
+      .v-stepper {
+      }
+      .step .circle {
+
+      }
+      .step .line {
+   
+      }
+      .step.completed .circle {
+   
+      }
+      .step.completed .line {
+      }
+      .step.active .circle {
+
+      }
+      .step.empty .circle {
+      }
+      .step.empty .line {
+
+      }
+      .step:last-child .line {
+
+      }
+      .content {
+
+      }
+    }
+  }
 }
