@@ -23,14 +23,14 @@ const AboutPage = () => {
   return (
     <div className="aboutData">
       <div className="aboutDetails">
-        <div>
+        <div className="aboutDetailsData">
           I have experience as a Software Developer. Till now i had worked on 4
           Projects that are -
         </div>
-        <div>1- School Application Using React JS -( Freelancing project ).</div>
-        <div>2- Finance Web Application Using React JS.</div>
-        <div>3- Institute Mobile Application Using React Native.</div>
-        <div>4- Flight Booking Web Application Using Next JS.</div>
+        <div className="aboutDetailsData">1- School Application Using React JS -( Freelancing project ).</div>
+        <div className="aboutDetailsData">2- Finance Web Application Using React JS.</div>
+        <div className="aboutDetailsData">3- Institute Mobile Application Using React Native.</div>
+        <div className="aboutDetailsData">4- Flight Booking Web Application Using Next JS.</div>
       </div>
       <div className="doing">What I'm Doing</div>
       <div className="cardContainer">

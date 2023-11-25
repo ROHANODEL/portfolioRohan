@@ -12,7 +12,7 @@ const ExperiencePage = () => {
           </div>
 
           <div class="content">
-            <div>company Name = Aquis Tech (Freelancing work)</div>
+            <div>Company Name = Aquis Tech (Freelancing work)</div>
             <div>January 2021 - December 2021</div>
           </div>
         </div>
@@ -24,7 +24,7 @@ const ExperiencePage = () => {
           </div>
 
           <div class="content">
-            <div>company Name = Polyglots</div>
+            <div>Company Name = Polyglots</div>
             <div>January 2022 - August 2023</div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const ExperiencePage = () => {
           </div>
 
           <div class="content">
-            <div>company Name = ....... </div>
+            <div>Company Name = ....... </div>
             <div>present</div>
           </div>
         </div>
