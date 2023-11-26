@@ -12,7 +12,7 @@ const ExperiencePage = () => {
           </div>
 
           <div class="content">
-            <div>Company Name = Aquis Tech (Freelancing work)</div>
+            <div>Company Name : Aquis Tech</div>
             <div>January 2021 - December 2021</div>
           </div>
         </div>
@@ -24,7 +24,7 @@ const ExperiencePage = () => {
           </div>
 
           <div class="content">
-            <div>Company Name = Polyglots</div>
+            <div>Company Name : Polyglots</div>
             <div>January 2022 - August 2023</div>
           </div>
         </div>
@@ -44,8 +44,10 @@ const ExperiencePage = () => {
 
       <div className="courseDetails">
         <div className="courseTitle">Course</div>
-        <div className="courseData">* Full stack java developer course</div>
-        <div className="courseData">* Spring boot advanced java course</div>
+        <ul>
+        <li className="courseData">Full stack java developer course</li>
+        <li className="courseData">Spring boot advanced java course</li>
+        </ul>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 .resumeData {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 11rem;
   .resumeCard {
     border: 1px solid hsl(0, 0%, 22%);
     background-color: hsl(240, 1%, 17%);

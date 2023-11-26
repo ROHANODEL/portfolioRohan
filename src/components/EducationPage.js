@@ -13,8 +13,8 @@ const EducationPage = () => {
 
           <div class="content">
             <div>SSC</div>
-            <div>savitribai phule pune university</div>
-            <div>Passout year = March 2012</div> 
+            <div>Maharashtra State Board</div>
+            <div>Passout Year : March 2012</div> 
             {/* 55% */}
           </div>
         </div>
@@ -26,9 +26,9 @@ const EducationPage = () => {
           </div>
 
           <div class="content">
-            <div>HSC . (science)</div>
-            <div>savitribai phule pune university</div>
-            <div>Passout year = February 2014</div>
+            <div>HSC</div>
+            <div>Maharashtra State Board</div>
+            <div>Passout Year : February 2014</div>
             {/* 48% */}
           </div>
         </div>
@@ -40,9 +40,9 @@ const EducationPage = () => {
           </div>
 
           <div class="content">
-            <div>BCA . (Graduation)</div>
-            <div>savitribai phule pune university</div>
-            <div>Passout year = August 2021</div>
+            <div>BCA (Bachelor of Computer Application)</div>
+            <div>Savitribai Phule Pune University</div>
+            <div>Passout Year : August 2021</div>
             {/* 76% */}
           </div>
         </div>

@@ -139,7 +139,7 @@ const PortfolioPage = () => {
               </div>
             ))}
           </div>
-          <div style={{height: '100%'}}>
+          <div className="allComponent">
             {
               title === "About Me" ? <AboutPage/>
               : title === "Experience" ? <ExperiencePage/>

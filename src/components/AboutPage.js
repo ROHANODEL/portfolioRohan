@@ -9,28 +9,29 @@ const AboutPage = () => {
   const cardInfo = [
     {
       name: "Frontend developer",
-      details: "frontend web application develop using React js and Next js",
+      details: "Frontend web application developed using React js and Next js",
     },
     {
       name: "Backend Developer",
-      details: "backend web application develop using Java and spring boot",
+      details: "Backend web application developed using Java and Spring Boot",
     },
     {
       name: "Mobile App Developer",
-      details: "mobile application develop using React Native",
+      details: "Mobile application developed using React Native",
     },
   ];
   return (
     <div className="aboutData">
       <div className="aboutDetails">
         <div className="aboutDetailsData">
-          I have experience as a Software Developer. Till now i had worked on 4
-          Projects that are
+          I have experience as a Software Developer. Till now i had worked on 4 projects those are:
         </div>
-        <div className="aboutDetailsData">1- School Web Application Using React JS -( Freelancing project ).</div>
-        <div className="aboutDetailsData">2- Finance Web Application Using React JS.</div>
-        <div className="aboutDetailsData">3- Institute Mobile Application Using React Native.</div>
-        <div className="aboutDetailsData">4- Flight Booking Web Application Using Next JS.</div>
+        <ul>
+        <li className="aboutDetailsData">School Web Application Using React JS</li>
+        <li className="aboutDetailsData">Finance Web Application Using React JS</li>
+        <li className="aboutDetailsData">Institute Mobile Application Using React Native</li>
+        <li className="aboutDetailsData">Flight Booking Web Application Using Next JS</li>
+        </ul>
       </div>
       <div className="doing">What I'm Doing</div>
       <div className="cardContainer">
