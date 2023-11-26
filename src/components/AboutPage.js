@@ -27,10 +27,10 @@ const AboutPage = () => {
           I have experience as a Software Developer. Till now i had worked on 4 projects those are:
         </div>
         <ul>
-        <li className="aboutDetailsData">School Web Application Using React JS</li>
-        <li className="aboutDetailsData">Finance Web Application Using React JS</li>
-        <li className="aboutDetailsData">Institute Mobile Application Using React Native</li>
-        <li className="aboutDetailsData">Flight Booking Web Application Using Next JS</li>
+        <li className="aboutDetailsData">School Web Application developed Using React JS</li>
+        <li className="aboutDetailsData">Finance Web Application developed Using React JS</li>
+        <li className="aboutDetailsData">Institute Mobile Application developed Using React Native</li>
+        <li className="aboutDetailsData">Flight Booking Web Application developed Using Next JS</li>
         </ul>
       </div>
       <div className="doing">What I'm Doing</div>
