@@ -1,5 +1,6 @@
 import React from "react";
-import Resume from "../image/Resume.pdf";
+// import Resume from "../image/Resume.pdf";
+import newResume from "../image/newResume.pdf";
 import CoverLetter from "../image/Cover_Letter.pdf";
 import "../styles/ResumePage.scss";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +10,7 @@ const ResumePage = () => {
   return (
     <div className="resumeData">
       <a
-        href={Resume}
+        href={newResume}
         download="Resume-Rohan_odel"
         target="_blank"
         rel="noreferrer"
