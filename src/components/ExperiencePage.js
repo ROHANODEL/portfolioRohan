@@ -45,8 +45,7 @@ const ExperiencePage = () => {
       <div className="courseDetails">
         <div className="courseTitle">Course</div>
         <ul>
-        <li className="courseData">Full stack java developer course</li>
-        <li className="courseData">Spring boot advanced java course</li>
+        <li className="courseData">Full Stack Software Development</li>
         </ul>
       </div>
     </div>
