@@ -3,58 +3,63 @@
   margin-inline: 2.5rem;
   .container {
     width: 85%;
-    .step {
-      padding: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      background-color: cream;
+    .circleData{
+      color: white;
+      font-weight: 500;
+      font-size: 1.2rem;
     }
-    .v-stepper {
-      position: relative;
-    }
-    .step .circle {
-      background-color: white;
-      border: 3px solid gray;
-      border-radius: 100%;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-    }
-    .step .line {
-      top: 23px;
-      left: 12px;
-      height: 100%;
-      position: absolute;
-      border-left: 3px solid gray;
-    }
-    .step.completed .circle {
-      visibility: visible;
-      background-color: #44e4af;
-      border-color: #44e4af;
-    }
-    .step.completed .line {
-      border-left: 3px solid #44e4af;
-    }
-    .step.active .circle {
-      visibility: visible;
-      border-color: #44e4af;
-    }
-    .step.empty .circle {
-      visibility: hidden;
-    }
-    .step.empty .line {
-      top: 0;
-      height: 150%;
-    }
-    .step:last-child .line {
-      border-left: 3px solid white;
-      z-index: -1;
-    }
-    .content {
-      margin-left: 20px;
-      display: inline-block;
-    }
+    // .step {
+    //   padding: 10px;
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: flex-start;
+    //   background-color: cream;
+    // }
+    // .v-stepper {
+    //   position: relative;
+    // }
+    // .step .circle {
+    //   background-color: white;
+    //   border: 3px solid gray;
+    //   border-radius: 100%;
+    //   width: 20px;
+    //   height: 20px;
+    //   display: inline-block;
+    // }
+    // .step .line {
+    //   top: 23px;
+    //   left: 12px;
+    //   height: 100%;
+    //   position: absolute;
+    //   border-left: 3px solid gray;
+    // }
+    // .step.completed .circle {
+    //   visibility: visible;
+    //   background-color: #44e4af;
+    //   border-color: #44e4af;
+    // }
+    // .step.completed .line {
+    //   border-left: 3px solid #44e4af;
+    // }
+    // .step.active .circle {
+    //   visibility: visible;
+    //   border-color: #44e4af;
+    // }
+    // .step.empty .circle {
+    //   visibility: hidden;
+    // }
+    // .step.empty .line {
+    //   top: 0;
+    //   height: 150%;
+    // }
+    // .step:last-child .line {
+    //   border-left: 3px solid white;
+    //   z-index: -1;
+    // }
+    // .content {
+    //   margin-left: 20px;
+    //   display: inline-block;
+    // }
   }
 
   .courseDetails {
@@ -77,28 +82,28 @@
     margin-top: 2.8rem;
     .container {
       width: 100%;
-      .step {
-      }
-      .v-stepper {
-      }
-      .step .circle {
-      }
-      .step .line {
-      }
-      .step.completed .circle {
-      }
-      .step.completed .line {
-      }
-      .step.active .circle {
-      }
-      .step.empty .circle {
-      }
-      .step.empty .line {
-      }
-      .step:last-child .line {
-      }
-      .content {
-      }
+      // .step {
+      // }
+      // .v-stepper {
+      // }
+      // .step .circle {
+      // }
+      // .step .line {
+      // }
+      // .step.completed .circle {
+      // }
+      // .step.completed .line {
+      // }
+      // .step.active .circle {
+      // }
+      // .step.empty .circle {
+      // }
+      // .step.empty .line {
+      // }
+      // .step:last-child .line {
+      // }
+      // .content {
+      // }
     }
 
     .courseDetails {
