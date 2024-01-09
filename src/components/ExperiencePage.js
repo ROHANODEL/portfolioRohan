@@ -84,7 +84,7 @@ const ExperiencePage = () => {
     <div
       style={{
         width: 24,
-        height: 24,
+        height: 14,
         borderRadius: "50%",
         backgroundColor: "#44e4af",
       }}
