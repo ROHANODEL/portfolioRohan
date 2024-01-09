@@ -70,9 +70,9 @@ const SkillPage = () => {
           <div className="progress" style={{ height: "1rem" }}>
             <div
               class="progress-bar progress-bar-striped active"
-              style={{ width: "60%", backgroundColor: "teal" }}
+              style={{ width: "80%", backgroundColor: "teal" }}
             >
-              Java . (60%)
+              Java . (80%)
             </div>
           </div>
         </div>

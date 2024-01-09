@@ -114,13 +114,13 @@ const PortfolioPage = () => {
           </div>
           <div className="leftBottomIcon">
             <div className="bottomIcon">
-              <FontAwesomeIcon icon={faFacebook} />
+            <a href="https://www.facebook.com/login/" style={{color:' white'}}><FontAwesomeIcon icon={faFacebook} /></a>
             </div>
             <div className="bottomIcon">
-              <FontAwesomeIcon icon={faInstagram} />
+            <a href="https://www.instagram.com/accounts/login/" style={{color:' white'}}><FontAwesomeIcon icon={faInstagram} /></a>
             </div>
             <div className="bottomIcon">
-              <FontAwesomeIcon icon={faLinkedin} />
+            <a href="https://www.linkedin.com/login" style={{color:' white'}}><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </div>
         </div>

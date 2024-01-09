@@ -88,8 +88,8 @@ const EducationPage = () => {
   const CustomStepIcon = () => (
     <div
       style={{
-        width: 23,
-        height: 23,
+        width: 24,
+        height: 15,
         borderRadius: "50%",
         backgroundColor: "#44e4af",
       }}
