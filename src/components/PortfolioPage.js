@@ -14,7 +14,7 @@ import EducationPage from "./EducationPage";
 // import { useNavigate } from "react-router-dom";
 import ContactPage from "./ContactPage";
 import ExperiencePage from "./ExperiencePage";
-import profile from "../image/rohanImg.jpg";
+import profile from "../image/rohanOdel.jpeg";
 import ResumePage from "./ResumePage";
 
 const PortfolioPage = () => {

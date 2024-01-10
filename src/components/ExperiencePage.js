@@ -76,15 +76,15 @@ const ExperiencePage = () => {
     },
     {
       label: "Company Name = ....... ",
-      description: `present....`,
+      description: `present`,
     },
   ];
 
   const CustomStepIcon = () => (
     <div
       style={{
-        width: 24,
-        height: 14,
+        width: 22,
+        height: 20,
         borderRadius: "50%",
         backgroundColor: "#44e4af",
       }}
