@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolioRohan/static/css/main.ac74eb5c.css",
-    "main.js": "/portfolioRohan/static/js/main.d6624e01.js",
+    "main.css": "/portfolioRohan/static/css/main.bd9d95e6.css",
+    "main.js": "/portfolioRohan/static/js/main.c64eb8b3.js",
     "static/js/787.bb15ad76.chunk.js": "/portfolioRohan/static/js/787.bb15ad76.chunk.js",
     "static/media/rohanOdel.jpeg": "/portfolioRohan/static/media/rohanOdel.5370c4b4d3d482918d1e.jpeg",
     "static/media/newResume.pdf": "/portfolioRohan/static/media/newResume.9be076705b27281bd2f2.pdf",
     "static/media/Cover_Letter.pdf": "/portfolioRohan/static/media/Cover_Letter.1442379839602a997336.pdf",
     "index.html": "/portfolioRohan/index.html",
-    "main.ac74eb5c.css.map": "/portfolioRohan/static/css/main.ac74eb5c.css.map",
-    "main.d6624e01.js.map": "/portfolioRohan/static/js/main.d6624e01.js.map",
+    "main.bd9d95e6.css.map": "/portfolioRohan/static/css/main.bd9d95e6.css.map",
+    "main.c64eb8b3.js.map": "/portfolioRohan/static/js/main.c64eb8b3.js.map",
     "787.bb15ad76.chunk.js.map": "/portfolioRohan/static/js/787.bb15ad76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac74eb5c.css",
-    "static/js/main.d6624e01.js"
+    "static/css/main.bd9d95e6.css",
+    "static/js/main.c64eb8b3.js"
   ]
 }
