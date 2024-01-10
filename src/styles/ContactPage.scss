@@ -9,11 +9,15 @@
       margin-top: 0.8rem;
     }
   }
-  .buttonSubmit{
+  .buttonSubmit {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 1.5rem;
+    .buttonData {
+      background-color: #44e4af;
+      color: black;
+    }
   }
 }
 
@@ -26,8 +30,8 @@
       .nameLabel {
       }
     }
-    .buttonSubmit{
-margin-bottom: 1rem;
+    .buttonSubmit {
+      margin-bottom: 1rem;
     }
   }
 }

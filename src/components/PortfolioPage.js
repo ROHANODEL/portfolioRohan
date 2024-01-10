@@ -70,6 +70,16 @@ const PortfolioPage = () => {
     //   navigate("/contact");
     // }
   };
+
+
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight || document.documentElement.scrollHeight || window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="mainClass">
       <div className="innerClass">
@@ -133,6 +143,8 @@ const PortfolioPage = () => {
                 style={menuColor === data.id ? { color: "#44e4af" } : {}}
                 onClick={() => {
                   menuButton(data);
+                  // window.scrollTo({ top: 1000, behavior: "smooth" })
+                  scrollToBottom();
                 }}
               >
                 {data.name}

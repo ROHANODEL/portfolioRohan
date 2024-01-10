@@ -2,15 +2,40 @@ import React from "react";
 import "../styles/ContactPage.scss";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+  const schema = yup.object({
+    fullName: yup.string().required("username is required"),
+    emailId: yup.string()
+    .email("email format is not valid")
+    .required("email is required"),
+    mobileNumber: yup.string().required("mobile number is required"),
+    contactPurpose:yup.string().required("contact purpose is required"),
+})
+
 
 const ContactPage = () => {
-  // const inputStyles = {
-  //   borderColor: "red",
-  //   borderWidth: "2px",
-  //   // You can add more styles as needed
-  // };
+
+  const form = useForm({
+    defaultValues: {
+        fullName: "",
+        emailId: "",
+        mobileNumber: "",
+        contactPurpose: ""
+    },
+    resolver : yupResolver(schema)
+  });
+  const { register, control, handleSubmit, formState } = form;
+  const { errors, isSubmitSuccessful } = formState;
+  const onSubmit = (data) => {
+      console.log('form submitted ====>', data);
+  }
+
   return (
     <div className="contactData">
+      {/* <form onSubmit={handleSubmit(onSubmit)} noValidate> */}
       <div className="contactField">
         <div className="nameLabel">Full Name</div>
         <TextField
@@ -37,7 +62,10 @@ const ContactPage = () => {
             },
           }}
           inputProps={{ style: { color: "white" } }}
-        />
+
+        />              
+        {/* <input type="text" id="username" {...register("username")} />
+        <p>{errors.username?.message}</p> */}
       </div>
       <div className="contactField">
         <div className="nameLabel">Email Id</div>
@@ -124,8 +152,11 @@ const ContactPage = () => {
         />
       </div>
       <div className="buttonSubmit">
-        <Button variant="contained">submit</Button>
+        <Button variant="contained" className="buttonData">
+          submit
+        </Button>
       </div>
+      {/* </form> */}
     </div>
   );
 };
