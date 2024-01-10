@@ -15,12 +15,24 @@ const ContactPage = () => {
         <div className="nameLabel">Full Name</div>
         <TextField
           id="outlined-basic"
-          label="Name"
+          label="Full Name"
           variant="outlined"
           sx={{
+            "& .MuiInputLabel-root": {
+              color: "gray",
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#44e4af",
+            },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 borderColor: "gray",
+              },
+              "&:hover fieldset": {
+                borderColor: "#44e4af",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "#44e4af",
               },
             },
           }}
@@ -34,9 +46,21 @@ const ContactPage = () => {
           label="Email Id"
           variant="outlined"
           sx={{
+            "& .MuiInputLabel-root": {
+              color: "gray",
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#44e4af",
+            },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 borderColor: "gray",
+              },
+              "&:hover fieldset": {
+                borderColor: "#44e4af",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "#44e4af",
               },
             },
           }}
@@ -50,9 +74,21 @@ const ContactPage = () => {
           label="Mobile Number"
           variant="outlined"
           sx={{
+            "& .MuiInputLabel-root": {
+              color: "gray",
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#44e4af",
+            },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 borderColor: "gray",
+              },
+              "&:hover fieldset": {
+                borderColor: "#44e4af",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "#44e4af",
               },
             },
           }}
@@ -60,15 +96,27 @@ const ContactPage = () => {
         />
       </div>
       <div className="contactField">
-        <div className="nameLabel">Address</div>
+        <div className="nameLabel">Contact purpose</div>
         <TextField
           id="outlined-basic"
-          label="Address"
+          label="Contact purpose"
           variant="outlined"
           sx={{
+            "& .MuiInputLabel-root": {
+              color: "gray",
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#44e4af",
+            },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 borderColor: "gray",
+              },
+              "&:hover fieldset": {
+                borderColor: "#44e4af",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "#44e4af",
               },
             },
           }}
