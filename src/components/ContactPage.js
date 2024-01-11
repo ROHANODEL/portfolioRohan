@@ -12,7 +12,11 @@ const schema = yup.object({
     .string()
     .email("email format is not valid")
     .required("email is required"),
-  mobileNumber: yup.string().required("Mobile number is required"),
+  mobileNumber: yup
+    .string()
+    .required("Mobile number is required")
+    .min(10, "too short mobile number")
+    .max(10, "too long mobile number"),
   contactPurpose: yup.string().required("Contact purpose is required"),
 });
 
@@ -65,7 +69,9 @@ const ContactPage = () => {
               inputProps={{ style: { color: "white" } }}
               {...register("fullName")}
             />
-            <div style={{color:'hsl(35, 100%, 68%)'}}>{errors.fullName?.message}</div>
+            <div style={{ color: "hsl(35, 100%, 68%)" }}>
+              {errors.fullName?.message}
+            </div>
           </div>
         </div>
         <div className="contactField">
@@ -98,7 +104,9 @@ const ContactPage = () => {
               inputProps={{ style: { color: "white" } }}
               {...register("emailId")}
             />
-            <div style={{color:'hsl(35, 100%, 68%)'}}>{errors.emailId?.message}</div>
+            <div style={{ color: "hsl(35, 100%, 68%)" }}>
+              {errors.emailId?.message}
+            </div>
           </div>
         </div>
         <div className="contactField">
@@ -131,7 +139,9 @@ const ContactPage = () => {
               inputProps={{ style: { color: "white" } }}
               {...register("mobileNumber")}
             />
-            <div style={{color:'hsl(35, 100%, 68%)'}}>{errors.mobileNumber?.message}</div>
+            <div style={{ color: "hsl(35, 100%, 68%)" }}>
+              {errors.mobileNumber?.message}
+            </div>
           </div>
         </div>
         <div className="contactField">
@@ -164,7 +174,9 @@ const ContactPage = () => {
               inputProps={{ style: { color: "white" } }}
               {...register("contactPurpose")}
             />
-            <div style={{color:'hsl(35, 100%, 68%)'}}>{errors.contactPurpose?.message}</div>
+            <div style={{ color: "hsl(35, 100%, 68%)" }}>
+              {errors.contactPurpose?.message}
+            </div>
           </div>
         </div>
         <div className="buttonSubmit">
