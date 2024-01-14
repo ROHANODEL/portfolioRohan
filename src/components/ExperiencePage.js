@@ -71,7 +71,7 @@ const ExperiencePage = () => {
       description: `January 2021 - December 2021`,
     },
     {
-      label: "Polyglots",
+      label: "Polyglots Software",
       description: "January 2022 - August 2023",
     },
     {
