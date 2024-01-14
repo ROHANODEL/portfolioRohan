@@ -68,7 +68,7 @@ const ExperiencePage = () => {
   const steps = [
     {
       label: "Aquis Tech",
-      description: `January 2021 - December 2021`,
+      description: `January 2021 - January 2022`,
     },
     {
       label: "Polyglots Software",
