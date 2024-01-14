@@ -75,7 +75,7 @@ const ExperiencePage = () => {
       description: "January 2022 - August 2023",
     },
     {
-      label: "Company Name = ....... ",
+      label: "Company Name = Parentheses Systems",
       description: `present`,
     },
   ];
