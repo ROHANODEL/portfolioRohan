@@ -67,15 +67,15 @@ import Typography from "@mui/material/Typography";
 const ExperiencePage = () => {
   const steps = [
     {
-      label: "Company Name : Aquis Tech",
+      label: "Company : Aquis Tech",
       description: `January 2021 - December 2021`,
     },
     {
-      label: "Company Name : Polyglots",
+      label: "Company : Polyglots",
       description: "January 2022 - August 2023",
     },
     {
-      label: "Company Name = Parentheses Systems",
+      label: "Company : Parentheses Systems",
       description: `present`,
     },
   ];
