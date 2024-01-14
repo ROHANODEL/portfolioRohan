@@ -3,6 +3,10 @@ import PortfolioPage from "./components/PortfolioPage";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import { BrowserRouter } from "react-router-dom";
 
+
+// npm run deploy
+
+
 const App = () => {
   return (
     <div>
