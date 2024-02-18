@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import emailjs from "@emailjs/browser";
 
 const schema = yup.object({
   fullName: yup.string().required("Full name is required"),
@@ -30,10 +31,31 @@ const ContactPage = () => {
     },
     resolver: yupResolver(schema),
   });
-  const { register, control, handleSubmit, formState } = form;
+  const { register, control, handleSubmit, formState, reset } = form;
   const { errors, isSubmitSuccessful } = formState;
+ 
   const onSubmit = (data) => {
+    const serviceId = "service_kjcbyhp";
+    const templateId = "template_z8hc69k";
+    const publicKey = "LiNsMC3YPHBYQ_GMp";
+
     console.log("form submitted ====>", data);
+    
+    const templateParams = {
+      from_name: data.fullName, 
+      from_email: data.emailId,
+      to_name: "Rohan odel",
+      mobile_number: data.mobileNumber,
+      contact_purpose: data.contactPurpose
+    }
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+    .then((response) => {
+      console.log("Email send successfully");
+      reset();
+    })
+    .catch((error)=> {
+      console.log('Failed to send email');
+    })
   };
 
   return (
