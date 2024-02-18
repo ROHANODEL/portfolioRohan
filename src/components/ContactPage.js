@@ -56,6 +56,7 @@ const ContactPage = () => {
     .catch((error)=> {
       console.log('Failed to send email');
     })
+    
   };
 
   return (
