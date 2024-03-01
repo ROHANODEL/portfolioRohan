@@ -52,6 +52,7 @@ const ContactPage = () => {
     .then((response) => {
       console.log("Email send successfully");
       reset();
+      alert("Email send successfully")
     })
     .catch((error)=> {
       console.log('Failed to send email');
