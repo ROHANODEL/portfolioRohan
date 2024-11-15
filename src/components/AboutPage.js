@@ -31,6 +31,7 @@ const AboutPage = () => {
         <li className="aboutDetailsData">Finance Web Application developed Using React JS</li>
         <li className="aboutDetailsData">Institute Mobile Application developed Using React Native</li>
         <li className="aboutDetailsData">Flight Booking Web Application developed Using Next JS</li>
+        <li className="aboutDetailsData">AI Web Application developed Using React JS and Next JS</li>
         </ul>
       </div>
       <div className="doing">What I'm Doing</div>
