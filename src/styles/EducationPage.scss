@@ -1,11 +1,24 @@
 .educationData {
-  margin-top: 7rem;
+  margin-top: 6rem;
+  // margin-inline: 2.5rem;
   .container {
     width: 80%;
-    .circleData{
-      color: white;
-      font-weight: 500;
-      font-size: 1.2rem;
+    .stepData {
+      display: flex;
+      flex-direction: row;
+      .circleData {
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+      .morButton {
+        background-color: #44e4af;
+        color: black;
+        border-radius: 30rem 10rem 30rem 10rem;
+        margin-left: 2rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+      }
     }
     // .step {
     //   padding: 10px;
@@ -62,15 +75,13 @@
   }
 }
 
-
-
 @media only screen and (max-width: 1000px) {
   .educationData {
     margin-top: 2.8rem;
     .container {
       width: 100%;
       // .step {
-  
+
       // }
       // .v-stepper {
       // }
@@ -78,10 +89,10 @@
 
       // }
       // .step .line {
-   
+
       // }
       // .step.completed .circle {
-   
+
       // }
       // .step.completed .line {
       // }

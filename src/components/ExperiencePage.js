@@ -63,6 +63,7 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 
 const ExperiencePage = () => {
   const steps = [
@@ -94,12 +95,15 @@ const ExperiencePage = () => {
   return (
     <div className="experienceData">
       <div class="container">
-        <Box sx={{ maxWidth: 400 }}>
+        <Box sx={{ maxWidth: 600 }}>
           <Stepper orientation="vertical">
             {steps.map((step) => (
               <Step active={true} key={step.label}>
-                <StepLabel StepIconComponent={CustomStepIcon}>
+                <StepLabel className="" StepIconComponent={CustomStepIcon}>
+                  <div className="stepData">
                   <div className="circleData">{step.label}</div>
+                  <Button variant="contained" className="morButton">more info</Button>
+                  </div>
                 </StepLabel>
                 <StepContent>
                   <Typography>{step.description}</Typography>
