@@ -46,9 +46,9 @@ const SkillPage = () => {
           <div className="progress" style={{ height: "1rem" }}>
             <div
               class="progress-bar progress-bar-striped active"
-              style={{ width: "75%", backgroundColor: "red" }}
+              style={{ width: "85%", backgroundColor: "red" }}
             >
-              Next js . (75%)
+              Next js . (85%)
             </div>
           </div>
         </div>
@@ -58,9 +58,9 @@ const SkillPage = () => {
           <div className="progress" style={{ height: "1rem" }}>
             <div
               class="progress-bar progress-bar-striped active"
-              style={{ width: "70%", backgroundColor: "maroon" }}
+              style={{ width: "80%", backgroundColor: "maroon" }}
             >
-              React Native . (70%)
+              React Native . (80%)
             </div>
           </div>
         </div>
@@ -82,9 +82,9 @@ const SkillPage = () => {
           <div className="progress" style={{ height: "1rem" }}>
             <div
               class="progress-bar progress-bar-striped active"
-              style={{ width: "60%", backgroundColor: "grey" }}
+              style={{ width: "70%", backgroundColor: "grey" }}
             >
-              Spring Boot . (60%)
+              Spring Boot . (70%)
             </div>
           </div>
         </div>
