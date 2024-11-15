@@ -76,7 +76,7 @@ const ExperiencePage = () => {
     },
     {
       label: "Parentheses Systems",
-      description: `present`,
+      description: "January 2024 - July 2024",
     },
   ];
 
