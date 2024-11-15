@@ -24,7 +24,7 @@ const AboutPage = () => {
     <div className="aboutData">
       <div className="aboutDetails">
         <div className="aboutDetailsData">
-          I have experience as a Software Developer. Till now i had worked on 4 projects those are:
+          I have experience as a Software Developer. Till now i had worked on 5 projects those are:
         </div>
         <ul>
         <li className="aboutDetailsData">School Web Application developed Using React JS</li>
