@@ -85,10 +85,11 @@ const ExperiencePage = () => {
   
   useEffect(() => {
     const handlePopState = (event) => {
-      if (open) {
+      if (open === true) {
         // Prevent the back button navigation
         event.preventDefault();
         event.stopPropagation();
+        setOpen(false)
       }
     };
     // Listen to the popstate event (triggered on back button)
@@ -252,7 +253,7 @@ const ExperiencePage = () => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "red" }} />
+            <CloseIcon style={{ color: "yellow" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
