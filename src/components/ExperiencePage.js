@@ -121,7 +121,7 @@ const ExperiencePage = () => {
     ".",
     "========================",
     "Project ==> School Web Application",
-    "(this is a school application in this project i work on desktop page and rest api and state management)",
+    "(school application which is related to manage all teachers and students daily school work details)",
     "Technology ==> HTML, CSS, JavaScript, React js, Redux, Formik, Axios, Bootstrap",
   ];
 
@@ -136,11 +136,11 @@ const ExperiencePage = () => {
     "Technology ==> HTML, CSS, JavaScript, React js, Formik, Axios, Bootstrap",
     "========================",
     "Project ==> RCC",
-    "(RCC (renukai coaching classes) is a institute mobile application which is in react native)",
+    "(RCC (renukai coaching classes) is a institute mobile application which is contain video lecture and pdf of study material)",
     "Technology ==> JavaScript, TypeScript, React Native, React Hook form, Axios, react paper",
     "========================",
     "Project ==> udchalo",
-    "(udchalo is a flight booking web application which is in Next js)",
+    "(udchalo is a flight booking web application where we can check flight, book flight, check flight timing also we can see offers on particular flight)",
     "Technology ==> HTML, CSS, JavaScript, TypeScript, Next js, React Hook form, Axios, Material UI",
 
   ];
@@ -152,8 +152,8 @@ const ExperiencePage = () => {
     ".",
     "========================",
     "Project ==> Humac AI",
-    "(Humac AI is a web application which is in React js and Next js)",
-    "Technology ==> HTML, CSS, JavaScript, TypeScript, React js, Next js, React Hook form, Axios, Material UI, React Charts",
+    "(Humac AI is a AI application in this we can handle and check CNC machine)",
+    "Technology ==> HTML, CSS, JavaScript, TypeScript, React js, Next js, React Hook form, Axios, Material UI, React Charts, Hasura, GraphQL",
   ];
 
   const CustomStepIcon = () => (
@@ -229,7 +229,7 @@ const ExperiencePage = () => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "red" }} />
+            <CloseIcon style={{ color: "#44e4af" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
