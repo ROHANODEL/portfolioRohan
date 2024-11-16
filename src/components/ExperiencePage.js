@@ -80,37 +80,9 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 }));
 
 const ExperiencePage = () => {
-
   const [open, setOpen] = useState(false);
   const [arrName, setArrName] = useState();
-  
-  
-  useEffect(() => {
-    // Prevent navigation when the dialog is open
-    const handlePopState = (event) => {
-      if (open) {
-        // Prevent the back button navigation by pushing a new state
-        window.history.pushState(null, "", window.location.href);
-      }
-    };
-
-    // Listen to the popstate event (triggered on back button)
-    window.addEventListener("popstate", handlePopState);
-
-    // Optionally, if you want to handle history.pushState to push a new state when the dialog opens
-    if (open) {
-      // Push a new state when dialog is opened so back button doesn't navigate away
-      window.history.pushState(null, "", window.location.href);
-    }
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-    };
-  }, [open]);
-
-
-
+    
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -258,7 +230,7 @@ const ExperiencePage = () => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "yellow" }} />
+            <CloseIcon style={{ color: "white" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
