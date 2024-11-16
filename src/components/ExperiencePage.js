@@ -53,7 +53,7 @@
 // };
 // export default ExperiencePage;
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/ExperiencePage.scss";
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
@@ -82,6 +82,29 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const ExperiencePage = () => {
   const [open, setOpen] = useState(false);
   const [arrName, setArrName] = useState();
+  
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (open) {
+        // Prevent the back button navigation
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    };
+    // Listen to the popstate event (triggered on back button)
+    window.addEventListener("popstate", handlePopState);
+    // Optionally, if you want to handle history.pushState to push a new state when the dialog opens
+    if (open) {
+      window.history.pushState(null, "", window.location.href);
+    }
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, [open]);
+
+
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -116,10 +139,10 @@ const ExperiencePage = () => {
 
   const aquisTechArray = [
     "Company Name ==> Aquis Tech",
-    "Start Date ==> January 2021",
-    "End Date ==> January 2022",
-    ".",
-    "========================",
+    "Start Date ==> 10-1-2021",
+    "End Date ==> 5-1-2022",
+    <hr/>,
+    <hr/>,
     "Project ==> School Web Application",
     "(school application which is related to manage all teachers and students daily school work details)",
     "Technology ==> HTML, CSS, JavaScript, React js, Redux, Formik, Axios, Bootstrap",
@@ -127,18 +150,18 @@ const ExperiencePage = () => {
 
   const polyglotsSoftwareArray = [
     "Company Name ==> Polyglots Software",
-    "Start Date ==> January 2022",
-    "End Date ==> August 2023",
-    ".",
-    "========================",
+    "Start Date ==> 7-1-2022",
+    "End Date ==> 17-9-2023",
+    <hr/>,
+    <hr/>,
     "Project ==> Skill Elevator",
     "(Skill Elevator is a finance web application which is related to tally software learning)",
     "Technology ==> HTML, CSS, JavaScript, React js, Formik, Axios, Bootstrap",
-    "========================",
+    <hr/>,
     "Project ==> RCC",
     "(RCC (renukai coaching classes) is a institute mobile application which is contain video lecture and pdf of study material)",
     "Technology ==> JavaScript, TypeScript, React Native, React Hook form, Axios, react paper",
-    "========================",
+    <hr/>,
     "Project ==> udchalo",
     "(udchalo is a flight booking web application where we can check flight, book flight, check flight timing also we can see offers on particular flight)",
     "Technology ==> HTML, CSS, JavaScript, TypeScript, Next js, React Hook form, Axios, Material UI",
@@ -147,10 +170,10 @@ const ExperiencePage = () => {
 
   const parenthesesSystemsArray = [
     "Company Name ==> Parentheses Systems",
-    "Start Date ==> January 2024",
-    "End Date ==> July 2024",
-    ".",
-    "========================",
+    "Start Date ==> 10-1-2024",
+    "End Date ==> 1-7-2024",
+    <hr/>,
+    <hr/>,
     "Project ==> Humac AI",
     "(Humac AI is a AI application in this we can handle and check CNC machine)",
     "Technology ==> HTML, CSS, JavaScript, TypeScript, React js, Next js, React Hook form, Axios, Material UI, React Charts, Hasura, GraphQL",
@@ -229,7 +252,7 @@ const ExperiencePage = () => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "#44e4af" }} />
+            <CloseIcon style={{ color: "red" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
