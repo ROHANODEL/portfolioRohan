@@ -62,7 +62,6 @@ import StepLabel from "@mui/material/StepLabel";
 import StepContent from "@mui/material/StepContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-
 import { styled } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -86,21 +85,15 @@ const ExperiencePage = () => {
   useEffect(() => {
     const handlePopState = (event) => {
       if (open) {
-        // Prevent the back button navigation
         event.preventDefault();
         event.stopPropagation();
         setOpen(false);
       }
     };
-
-    // Listen to the popstate event (triggered on back button)
     window.addEventListener("popstate", handlePopState);
-
-    // Optionally, if you want to handle history.pushState to push a new state when the dialog opens
     if (open) {
       window.history.pushState(null, "", window.location.href);
     }
-
     return () => {
       window.removeEventListener("popstate", handlePopState);
     };
@@ -112,6 +105,7 @@ const ExperiencePage = () => {
   const handleClose = () => {
     setOpen(false);
   };
+
   const arrayDatafun = (data) => {
     if(data === 0){
       setArrName(aquisTechArray)
@@ -120,23 +114,8 @@ const ExperiencePage = () => {
     }else if(data === 2){
       setArrName(parenthesesSystemsArray)
     }else{
-
     }
   }
-  const steps = [
-    {
-      label: "Aquis Tech",
-      description: `January 2021 - January 2022`,
-    },
-    {
-      label: "Polyglots Software",
-      description: "January 2022 - August 2023",
-    },
-    {
-      label: "Parentheses Systems",
-      description: "January 2024 - July 2024",
-    },
-  ];
 
   const aquisTechArray = [
     "Company Name ==> Aquis Tech",
@@ -166,7 +145,6 @@ const ExperiencePage = () => {
     "Project ==> udchalo",
     "(udchalo is a flight booking web application where we can check flight, book flight, check flight timing also we can see offers on particular flight)",
     "Technology ==> HTML, CSS, JavaScript, TypeScript, Next js, React Hook form, Axios, Material UI",
-
   ];
 
   const parenthesesSystemsArray = [
@@ -178,6 +156,21 @@ const ExperiencePage = () => {
     "Project ==> Humac AI",
     "(Humac AI is a AI application in this we can handle and check CNC machine)",
     "Technology ==> HTML, CSS, JavaScript, TypeScript, React js, Next js, React Hook form, Axios, Material UI, React Charts, Hasura, GraphQL",
+  ];
+
+  const steps = [
+    {
+      label: "Aquis Tech",
+      description: `January 2021 - January 2022`,
+    },
+    {
+      label: "Polyglots Software",
+      description: "January 2022 - August 2023",
+    },
+    {
+      label: "Parentheses Systems",
+      description: "January 2024 - July 2024",
+    },
   ];
 
   const CustomStepIcon = () => (
@@ -221,14 +214,13 @@ const ExperiencePage = () => {
           </Stepper>
         </Box>
       </div>
-
       <div className="courseDetails">
         <div className="courseTitle">Course</div>
         <ul>
           <li className="courseData">Full Stack Software Developer</li>
         </ul>
       </div>
-
+      
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -253,7 +245,7 @@ const ExperiencePage = () => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "yellow" }} />
+            <CloseIcon style={{ color: "#44e4af" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
