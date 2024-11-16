@@ -216,7 +216,7 @@ const ExperiencePage = () => {
             color: "white",
           }}
         >
-          <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
+          <DialogTitle style={{ color: "#44e4af" }} sx={{ m: 0, p: 2 }} id="customized-dialog-title">
             Experience Details
           </DialogTitle>
           <IconButton
