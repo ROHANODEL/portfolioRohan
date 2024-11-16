@@ -119,29 +119,24 @@ const EducationPage = () => {
 
   const sscArray = [
     "SSC",
+    "Maharashtra State Board",
     "School Name ==> Rambhau Mhalgi Foundation",
-    "Start Date ==> march 2010",
-    "End Date ==> march 2012",
-    "Obtained total marks ==>",
-    "Percentage ==> "
+    "Passout year ==> March 2012",
   ];
 
   const hscArray = [
     "HSC (science)",
+    "Maharashtra State Board",
     "College Name ==> Sant Tukaram",
-    "Start Date ==> march 2012",
-    "End Date ==> February 2014",
-    "Obtained total marks ==>",
-    "Percentage ==> "
+    "Passout year ==> February 2014",
   ];
 
   const graduationArray = [
     "Graduation (BCA)",
+    "Savitribai phule pune university",
     "College name ===> Jaikranti College",
-    "Start Date ==> april 2019",
-    "End Date ==> April 2021",
-    "Obtained total marks ==>",
-    "Percentage ==> "
+    "Passout year ==> August 2021",
+    "FIRST CLASS WITH DISTINCTION"
   ];
 
   const steps = [
