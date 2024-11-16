@@ -89,6 +89,7 @@ const ExperiencePage = () => {
         // Prevent the back button navigation
         event.preventDefault();
         event.stopPropagation();
+        setOpen(false);
       }
     };
 
@@ -252,7 +253,7 @@ const ExperiencePage = () => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "red" }} />
+            <CloseIcon style={{ color: "yellow" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
