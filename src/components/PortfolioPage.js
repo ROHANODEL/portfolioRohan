@@ -71,7 +71,10 @@ const PortfolioPage = () => {
     // }
   };
 
-
+  const popupMenuButton = () => {
+    setMenuColor(2);
+    setTitle("Experience");
+  }
 
   const scrollToBottom = () => {
     window.scrollTo({
@@ -154,7 +157,7 @@ const PortfolioPage = () => {
           <div className="allComponent">
             {
               title === "About Me" ? <AboutPage/>
-              : title === "Experience" ? <ExperiencePage/>
+              : title === "Experience" ? <ExperiencePage popupMenuButton={popupMenuButton}/>
               : title === "My Skills" ? <SkillPage/>
               : title === "Education" ? <EducationPage/>
               :  title === "Resume" ? <ResumePage/>

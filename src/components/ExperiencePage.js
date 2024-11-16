@@ -79,7 +79,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-const ExperiencePage = () => {
+const ExperiencePage = (props) => {
   const [open, setOpen] = useState(false);
   const [arrName, setArrName] = useState();
     
@@ -88,6 +88,7 @@ const ExperiencePage = () => {
   };
   const handleClose = () => {
     setOpen(false);
+    props.popupMenuButton();
   };
   const arrayDatafun = (data) => {
     if(data === 0){
