@@ -79,30 +79,44 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-const ExperiencePage = (event) => {
+const ExperiencePage = () => {
+
   const [open, setOpen] = useState(false);
   const [arrName, setArrName] = useState();
   
-  useEffect(() => {
-      const handlePopState = (event) => {
+    useEffect(() => {
+      const handlePopState = () => {
       if (open === true) {
-        // Prevent the back button navigation
-        event.preventDefault();
-        event.stopPropagation();
+        // event.preventDefault();
+        // event.stopPropagation();
         setOpen(false)
       }
     };
-    // Listen to the popstate event (triggered on back button)
     window.addEventListener("popstate", handlePopState);
-    // Optionally, if you want to handle history.pushState to push a new state when the dialog opens
-    // if (open) {
-    //   window.history.pushState(null, "", window.location.href);
-    // }
 
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-    };
-  }, [open]);
+    }, [open]);
+
+
+  // useEffect(() => {
+  //     const handlePopState = (event) => {
+  //     if (open === true) {
+  //       // Prevent the back button navigation
+  //       event.preventDefault();
+  //       event.stopPropagation();
+  //       setOpen(false)
+  //     }
+  //   };
+  //   // Listen to the popstate event (triggered on back button)
+  //   window.addEventListener("popstate", handlePopState);
+  //   // Optionally, if you want to handle history.pushState to push a new state when the dialog opens
+  //   if (open) {
+  //     window.history.pushState(null, "", window.location.href);
+  //   }
+
+  //   return () => {
+  //     window.removeEventListener("popstate", handlePopState);
+  //   };
+  // }, [open]);
 
 
 
@@ -253,7 +267,7 @@ const ExperiencePage = (event) => {
               color: theme.palette.grey[500],
             })}
           >
-            <CloseIcon style={{ color: "green" }} />
+            <CloseIcon style={{ color: "red" }} />
           </IconButton>
           <DialogContent dividers>
             {arrName?.map((data) => (
