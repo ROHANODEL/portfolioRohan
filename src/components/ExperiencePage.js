@@ -144,7 +144,7 @@ const ExperiencePage = () => {
     <hr/>,
     "Project ==> udchalo",
     "(udchalo is a flight booking web application where we can check flight, book flight, check flight timing also we can see offers on particular flight)",
-    "Technology ==> HTML, CSS, JavaScript, TypeScript, Next js, React Hook form, Axios, Material UI",
+    "Technology ==> HTML, CSS, JavaScript, TypeScript, Next js, React Hook form, Axios, Material UI, tanstack/react-query",
   ];
 
   const parenthesesSystemsArray = [
